@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="hello">Hello World, PTSBActivity!</string>
+  
     <string name="app_name">PTSB Mobile</string>
-
+    <string name="open_24_url">https://m.open24.ie/</string>
+    <string name="home">Home</string>
+	<string name="about">About</string>
+	<string name="exit">Exit</string>
+	
+	<string name="are_you_sure">Are you sure?</string>
+	<string name="ok">OK</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="about_text">Unofficial PTSB Mobile App, version: </string>
+	<string name="unexpect_error">Unexpected Error: </string>
+	<string name="ssl_disclaimer_error">Proceed at own risk.  SSL Error: </string>
+	<string name="empty_string">&#160;</string>
+	
+	<!-- SSL ERROR CODES -->
+	<string name="SSL_EXPIRED">SSL cert has expired</string>
+	<string name="SSL_IDMISMATCH">SSL Hostname Mismatch</string>
+	<string name="SSL_NOTYETVALID">SSL cert not yet valid</string>
+	<string name="SSL_UNTRUSTED">SSL cert authority not trusted</string>
+	<string name="SSL_UNKNOWN">Uknown SSL Error</string>
 </resources>
