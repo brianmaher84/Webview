@@ -30,23 +30,24 @@ public final class R {
     public static final class string {
         /**  SSL ERROR CODES 
          */
-        public static final int SSL_EXPIRED=0x7f04000d;
-        public static final int SSL_IDMISMATCH=0x7f04000e;
-        public static final int SSL_NOTYETVALID=0x7f04000f;
-        public static final int SSL_UNKNOWN=0x7f040011;
-        public static final int SSL_UNTRUSTED=0x7f040010;
+        public static final int SSL_EXPIRED=0x7f04000e;
+        public static final int SSL_IDMISMATCH=0x7f04000f;
+        public static final int SSL_NOTYETVALID=0x7f040010;
+        public static final int SSL_UNKNOWN=0x7f040012;
+        public static final int SSL_UNTRUSTED=0x7f040011;
         public static final int about=0x7f040003;
-        public static final int about_text=0x7f040009;
+        public static final int about_text=0x7f04000a;
         public static final int app_name=0x7f040000;
         public static final int are_you_sure=0x7f040005;
-        public static final int empty_string=0x7f04000c;
+        public static final int empty_string=0x7f04000d;
         public static final int exit=0x7f040004;
         public static final int home=0x7f040002;
+        public static final int loading=0x7f040009;
         public static final int no=0x7f040008;
         public static final int ok=0x7f040006;
         public static final int open_24_url=0x7f040001;
-        public static final int ssl_disclaimer_error=0x7f04000b;
-        public static final int unexpect_error=0x7f04000a;
+        public static final int ssl_disclaimer_error=0x7f04000c;
+        public static final int unexpect_error=0x7f04000b;
         public static final int yes=0x7f040007;
     }
 }

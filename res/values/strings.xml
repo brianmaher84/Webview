@@ -11,6 +11,7 @@
 	<string name="ok">OK</string>
 	<string name="yes">Yes</string>
 	<string name="no">No</string>
+	<string name="loading">Loading...</string>
 	<string name="about_text">Unofficial PTSB Mobile App, version: </string>
 	<string name="unexpect_error">Unexpected Error: </string>
 	<string name="ssl_disclaimer_error">Proceed at own risk.  SSL Error: </string>
