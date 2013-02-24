@@ -1,7 +1,8 @@
-package com.brim4brim.ptsb;
+package com.brim4brim.webview;
 
-import com.brim4brim.ptsb.dialog.AboutDialogInterfaceListener;
-import com.brim4brim.ptsb.dialog.ExitDialogInterfaceListener;
+import com.brim4brim.webview.R;
+import com.brim4brim.webview.dialog.AboutDialogInterfaceListener;
+import com.brim4brim.webview.dialog.ExitDialogInterfaceListener;
 
 import android.app.Activity;
 import android.app.AlertDialog;

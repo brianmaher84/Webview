@@ -1,4 +1,4 @@
-package com.brim4brim.ptsb.dialog;
+package com.brim4brim.webview.dialog;
 
 import android.content.DialogInterface;
 

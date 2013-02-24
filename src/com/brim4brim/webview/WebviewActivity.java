@@ -1,6 +1,7 @@
-package com.brim4brim.ptsb;
+package com.brim4brim.webview;
 
-import com.brim4brim.ptsb.web.*;
+import com.brim4brim.webview.R;
+import com.brim4brim.webview.web.*;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -11,9 +12,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.Window;
 
-public class PTSBActivity extends Activity {
+public class WebviewActivity extends Activity {
 
-	private WebViewPtsb webview;
+	private WebViewCustom webview;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -29,11 +30,11 @@ public class PTSBActivity extends Activity {
 	private void initWebView() {
 	
 		if (webview == null) {
-			webview = new WebViewPtsb(this);
+			webview = new WebViewCustom(this);
 
 			webview.getSettings().setJavaScriptEnabled(true);
-			webview.setWebChromeClient(new WebChromeClientPtsb(this));
-			webview.setWebViewClient(new WebViewClientPtsb(this));
+			webview.setWebChromeClient(new WebChromeClient(this));
+			webview.setWebViewClient(new WebViewClient(this));
 
 			this.setProgressBarVisibility(true);
 

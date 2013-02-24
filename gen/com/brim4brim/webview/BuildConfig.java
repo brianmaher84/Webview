@@ -1,6 +1,6 @@
 /** Automatically generated file. DO NOT MODIFY */
-package com.brim4brim.ptsb;
+package com.brim4brim.webview;
 
 public final class BuildConfig {
-    public final static boolean DEBUG = true;
+    public final static boolean DEBUG = false;
 }

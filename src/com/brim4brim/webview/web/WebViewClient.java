@@ -1,16 +1,16 @@
-package com.brim4brim.ptsb.web;
+package com.brim4brim.webview.web;
 
-import com.brim4brim.ptsb.R;
+import com.brim4brim.webview.R;
 
 import android.app.Activity;
 import android.webkit.WebView;
 import android.widget.Toast;
 
-public class WebViewClientPtsb extends android.webkit.WebViewClient {
+public class WebViewClient extends android.webkit.WebViewClient {
 
 	Activity activity;
 	
-	public WebViewClientPtsb(Activity activity) {
+	public WebViewClient(Activity activity) {
 		super();
 		
 		this.activity = activity;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.brim4brim.ptsb"
+    package="com.brim4brim.webview"
     android:versionCode="2"
     android:versionName="1.1" >
 
@@ -15,7 +15,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name=".PTSBActivity"
+            android:name="com.brim4brim.webview.WebviewActivity"
             android:label="@string/app_name" 
             android:configChanges="keyboard|keyboardHidden|orientation">
             <intent-filter>

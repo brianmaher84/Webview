@@ -1,15 +1,15 @@
-package com.brim4brim.ptsb.web;
+package com.brim4brim.webview.web;
 
-import com.brim4brim.ptsb.R;
+import com.brim4brim.webview.R;
 
 import android.app.Activity;
 import android.webkit.WebView;
 
-public class WebChromeClientPtsb extends android.webkit.WebChromeClient {
+public class WebChromeClient extends android.webkit.WebChromeClient {
 
 	Activity activity;
 	
-	public WebChromeClientPtsb(Activity activity) {
+	public WebChromeClient(Activity activity) {
 		super();
 		
 		this.activity = activity;

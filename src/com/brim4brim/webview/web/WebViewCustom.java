@@ -1,6 +1,6 @@
-package com.brim4brim.ptsb.web;
+package com.brim4brim.webview.web;
 
-import com.brim4brim.ptsb.R;
+import com.brim4brim.webview.R;
 
 import android.app.Activity;
 import android.net.http.SslError;
@@ -8,11 +8,11 @@ import android.webkit.SslErrorHandler;
 import android.webkit.WebView;
 import android.widget.Toast;
 
-public class WebViewPtsb extends android.webkit.WebView {
+public class WebViewCustom extends android.webkit.WebView {
 
 	Activity activity;
 
-	public WebViewPtsb(Activity activity) {
+	public WebViewCustom(Activity activity) {
 		super(activity);
 
 		this.activity = activity;
