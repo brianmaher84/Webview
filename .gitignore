@@ -7,6 +7,9 @@
 *.o
 *.so
 
+# script files#
+*.sh
+
 # Eclipse Files #
 ############
 # For any Eclipse file types not required in source control
