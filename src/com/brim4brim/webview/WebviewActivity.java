@@ -38,7 +38,7 @@ public class WebviewActivity extends Activity {
 
 			this.setProgressBarVisibility(true);
 
-			webview.loadUrl(getString(R.string.open_24_url));
+			webview.loadUrl(getString(R.string.app_url));
 		}		
 	}
 

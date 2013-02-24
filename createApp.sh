@@ -24,9 +24,11 @@ rm -rf $build_path/bin/*
 
 cp ~/Pictures/appLogos/hdpi/$app_logo ~/Pictures/appLogos/ldpi/$app_logo
 cp ~/Pictures/appLogos/hdpi/$app_logo ~/Pictures/appLogos/mdpi/$app_logo
+cp ~/Pictures/appLogos/hdpi/$app_logo ~/Pictures/appLogos/store/hires/$app_logo
 
 sips --resampleHeight 36 ~/Pictures/appLogos/ldpi/$app_logo
 sips --resampleHeight 48 ~/Pictures/appLogos/mdpi/$app_logo
+sips --resampleHeight 512 ~/Pictures/appLogos/store/hires/$app_logo
 
 cp ~/Pictures/appLogos/hdpi/$app_logo $build_path/res/drawable-hdpi/ic_launcher.png
 cp ~/Pictures/appLogos/ldpi/$app_logo $build_path/res/drawable-ldpi/ic_launcher.png
@@ -49,8 +51,8 @@ cd $cur_path
 
 /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/jarsigner -verbose -keystore ~/AndKeyStore/AndKeyStore -storepass asdf1asdf $build_path/bin/WebviewActivity-release-unsigned.apk brim4brim
 
-cp $build_path/bin/WebviewActivity-release-unsigned.apk $cur_path/bin/$app_name.apk
-#~/android-sdks/tools/zipalign -f -v $build_path/bin/WebviewActivity-release-unsigned.apk $cur_path/bin/Politics.ie.apk
+#cp $build_path/bin/WebviewActivity-release-unsigned.apk $cur_path/bin/$app_name.apk
+~/android-sdks/tools/zipalign -f -v 4 $build_path/bin/WebviewActivity-release-unsigned.apk $cur_path/bin/$app_name.apk
 
 sed -i -e 's#'$app_name'#$website_name#' $build_path/res/values/strings.xml
 sed -i -e 's#'$app_url'#$website_url#' $build_path/res/values/strings.xml

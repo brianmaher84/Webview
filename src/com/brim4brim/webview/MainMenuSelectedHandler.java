@@ -23,7 +23,7 @@ public class MainMenuSelectedHandler {
 	public boolean handleMenuSelect(MenuItem item, WebView webview) {
 		switch (item.getItemId()) {
 		case R.id.home:
-			webview.loadUrl(activity.getString(R.string.open_24_url));
+			webview.loadUrl(activity.getString(R.string.app_url));
 			return true;
 		case R.id.about:
 			String appVersion = activity.getString(R.string.empty_string);
