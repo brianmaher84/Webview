@@ -2,5 +2,5 @@
 package com.brim4brim.webview;
 
 public final class BuildConfig {
-    public final static boolean DEBUG = false;
+    public final static boolean DEBUG = true;
 }
