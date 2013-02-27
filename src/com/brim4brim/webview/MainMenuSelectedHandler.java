@@ -7,6 +7,7 @@ import com.brim4brim.webview.dialog.ExitDialogInterfaceListener;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.view.MenuItem;
@@ -24,6 +25,16 @@ public class MainMenuSelectedHandler {
 		switch (item.getItemId()) {
 		case R.id.home:
 			webview.loadUrl(activity.getString(R.string.app_url));
+			return true;
+		case R.id.refresh:
+			webview.reload();
+			return true;
+		case R.id.share:
+			String shareBody = "Sharing from " + activity.getString(R.string.app_name) + ", " + webview.getUrl();
+			Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+			sharingIntent.setType("text/plain");
+			sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+			activity.startActivity(Intent.createChooser(sharingIntent, "Share via"));
 			return true;
 		case R.id.about:
 			String appVersion = activity.getString(R.string.empty_string);

@@ -5,6 +5,8 @@
     <string name="app_url">$website_url</string>
     <string name="home">Home</string>
 	<string name="about">About</string>
+	<string name="refresh">Refresh</string>
+	<string name="share">Share</string>
 	<string name="exit">Exit</string>
 	
 	<string name="are_you_sure">Are you sure?</string>
